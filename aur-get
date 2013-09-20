@@ -1,0 +1,9 @@
+#/bin/sh
+for package
+do
+  # Grab the first two characters of the package name
+  prefix=$(echo $package | sed -e 's/\(..\).*/\1/')
+
+  # Download and extract the file
+  curl "https://aur.archlinux.org/packages/$prefix/$package/$package.tar.gz" | tar -xvz
+done
