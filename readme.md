@@ -1,6 +1,8 @@
 # aur-get
 
-This is a simple utility that downloads and unpacks build scripts from the [Arch User Repository](https://aur.archlinux.org/). While there are many AUR helpers that can automatically download, build, install, and update software from the AUR, there are times when it makes sense to build the software yourself. For example:
+This is a simple utility that downloads and unpacks build scripts from the [Arch User Repository](https://aur.archlinux.org/). This was a bit more complicated back when the AUR was based on tarballs, but now this is just a trivial `git clone` command.
+
+While there are many AUR helpers that can automatically download, build, install, and update software from the AUR, there are times when it makes sense to build the software yourself. For example:
 
 * You want to modify the package somehow
 * You only want to download and build once, and then install the results on multiple computers
